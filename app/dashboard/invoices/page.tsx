@@ -9,8 +9,8 @@ import Pagination from "@/app/ui/invoices/pagination";
 
 export default async function Invoices(props: {
   searchParams: {
-    query: string;
-    page: string;
+    query?: string;
+    page?: string;
   };
 }) {
   const searchParams = await props.searchParams;
