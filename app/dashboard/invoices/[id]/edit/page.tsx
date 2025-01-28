@@ -1,10 +1,6 @@
 import Form from "@/app/ui/invoices/edit-form";
 import Breadcrumbs from "@/app/ui/invoices/breadcrumbs";
-import {
-  fetchCustomers,
-  fetchFilteredInvoices,
-  fetchInvoiceById,
-} from "@/app/lib/data";
+import { fetchCustomers, fetchInvoiceById } from "@/app/lib/data";
 import { notFound } from "next/navigation";
 export default async function EditInvoice(props: {
   params: Promise<{ id: string }>;
