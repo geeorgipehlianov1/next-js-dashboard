@@ -8,10 +8,10 @@ import { fetchInvoicesPages } from "@/app/lib/data";
 import Pagination from "@/app/ui/invoices/pagination";
 
 export default async function Invoices(props: {
-  searchParams: {
+  searchParams?: Promise<{
     query?: string;
     page?: string;
-  };
+  }>;
 }) {
   const searchParams = await props.searchParams;
 
